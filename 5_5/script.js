@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 
-
 app.use('/store', function(req,res,next){
   console.log('Middleware req -> /store');
   next();
