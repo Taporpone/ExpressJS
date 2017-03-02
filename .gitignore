@@ -3,6 +3,7 @@
 
 ### @Taporpone | Own ###
 5_2/
+5_7/config.js @Google tokens
 
 ### @Taporpone | WebPack ###
 build/
@@ -161,3 +162,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows,macos,emacs,node
+5_7/config.js
