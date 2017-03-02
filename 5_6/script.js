@@ -1,21 +1,17 @@
 var express = require('express');
 var app = express();
 
-
-app.use('/store', function(req,res,next){
-  console.log('Middleware req -> /store');
-  next();
-});
+app.set('view engine','pug');
+app.set('views','./views')
 
 app.get('/',function(req,res) {
-  res.send('Hello!');
+  res.render('index');
   res.end();
 });
-
-app.get('/store',function(req,res){
-  res.send('Store');
+app.get('/logged_in',function(req,res){
+  res.render('logged_in');
   res.end();
-});
+})
 
 var server = app.listen(3000);
 
