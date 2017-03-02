@@ -12,6 +12,7 @@ app.get('/getNote', function(req,res){
     if (err) throw err;
     fileContent = data;
     res.send(data);
+    res.end();
   })
 });
 
@@ -21,6 +22,7 @@ app.post('/updateNote/:note', function(req,res){
     if (err) throw err;
     console.log('File updated!');
   })
+  res.end();
 });
 
 
