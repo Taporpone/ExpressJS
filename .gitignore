@@ -1,8 +1,11 @@
 
 # Created by https://www.gitignore.io/api/windows,macos,emacs,node
 
+### @Taporpone | Own ###
+5_2/
+
 ### @Taporpone | WebPack ###
-build/ 
+build/
 
 
 ### Emacs ###
