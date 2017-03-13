@@ -3,7 +3,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
-var fileContent;
+var fileContent = '';
+
+function errorCallback(err,data) {
+  if (err)
+}
 
 fs.stat('./test.json', function(err){
   if (err){

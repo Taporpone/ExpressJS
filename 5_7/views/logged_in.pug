@@ -1,4 +1,8 @@
 html
+  head
+    style
+      include logged_in.css
   body
-    include ./title.pug
-    p Czesc "#{user.displayName}"
+    div.container
+      include ./title.pug
+      p Czesc "#{user.displayName}"
