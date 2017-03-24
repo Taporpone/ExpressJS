@@ -5,10 +5,6 @@ var bodyParser = require('body-parser');
 var app = express();
 var fileContent = '';
 
-function errorCallback(err,data) {
-  if (err)
-}
-
 fs.stat('./test.json', function(err){
   if (err){
     fs.writeFile('./test.json','', function(err){
