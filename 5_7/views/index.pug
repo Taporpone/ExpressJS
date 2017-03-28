@@ -1,7 +1,10 @@
 doctype html
 html
+  head
+    style
+      include index.css
   body
-    include ./title.pug
-    div.loginButton
-      button
-        a(href="/auth/google",style="text-decoration:none") Zaloguj
+    div.container
+      include ./title.pug
+      div.loginButton
+        a(href="/auth/google") #[img(src="google.png")]

@@ -31,9 +31,7 @@ app.set('views','./views')
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(function(req,res,next){
-  res.status(404).send('Not found');
-});
+app.use(express.static('resources'));
 
 app.get('/',function(req,res) {
   res.render('index', {user: req.user});
@@ -52,3 +50,7 @@ app.get('/auth/google/callback', passport.authenticate('google', {
 }));
 
 var server = app.listen(3000);
+
+app.use(function(req,res,next){
+  res.status(404).send('Not found');
+});

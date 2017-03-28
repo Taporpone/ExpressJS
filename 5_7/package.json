@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "express": "^4.15.0",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
     "pug": "^2.0.0-beta11"
   }
 }
